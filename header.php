@@ -27,10 +27,10 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 
-<div id="container">
+<div id="container-fluid">
   <!-- Modified Bootstrap Nav using WP walker -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
       <?php bloginfo('name'); ?>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,8 +38,8 @@
     </button>
     <?php
       wp_nav_menu([
-        'menu'            => 'primary',
-        'theme_location'  => 'menu-1',
+        'menu'            => 'Primary',
+        'theme_location'  => 'Primary',
         'container'       => 'div',
         'container_id'    => 'bs4navbar',
         'container_class' => 'collapse navbar-collapse',

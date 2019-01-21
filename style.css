@@ -1,0 +1,41 @@
+/*
+Theme Name: Twentynineteen Child
+Description: A child theme of Twentynineteen Theme
+Author: First Creative
+Author URI: http://www.firstcreative.com/
+Version: 1.0.0
+Template: twentynineteen
+*/
+.bg-engineering {
+    width: 29px; height: 52px;
+    background: url('/wp-content/uploads/2019/01/css_sprites.png') -99px -40px;
+}
+.bg-recertification {
+    width: 43px; height: 49px;
+    background: url('/wp-content/uploads/2019/01/css_sprites.png') -0 -46px;
+}
+.bg-installation {
+    width: 41px; height: 40px;
+    background: url('/wp-content/uploads/2019/01/css_sprites.png') -99px -0;
+}
+.bg-icon {
+    width: 46px; height: 40px;
+    background: url('/wp-content/uploads/2019/01/css_sprites.png') -53px -0;
+}
+.bg-inspection {
+    width: 36px; height: 48px;
+    background: url('/wp-content/uploads/2019/01/css_sprites.png') -53px -40px;
+}
+.bg-wordBubble {
+    width: 53px; height: 46px;
+    background: url('/wp-content/uploads/2019/01/css_sprites.png') -0 -0;
+}
+.bg-linkedin {
+    width: 30px; height: 29px;
+    background: url('/wp-content/uploads/2019/01/css_sprites.png') -0 -95px;
+}
+@media only screen and (min-width: 1168px){
+.entry .entry-content > *, .entry .entry-summary > * {
+    max-width: 100%;
+}
+}

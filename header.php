@@ -29,9 +29,10 @@
 
 <div id="container-fluid">
   <!-- Modified Bootstrap Nav using WP walker -->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-transparent">
     <a class="navbar-brand" href="/">
-      <?php bloginfo('name'); ?>
+      <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"
+        alt="High Engineering logo"/>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

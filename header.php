@@ -31,8 +31,8 @@
   <!-- Modified Bootstrap Nav using WP walker -->
   <nav class="navbar navbar-expand-md navbar-light fixed-top bg-transparent">
     <a class="navbar-brand" href="/">
-      <img class="img-fluid" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"
-        alt="High Engineering logo"/>
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"
+        width="150" height="70" class="d-inline-block align-top" alt="High Engineering logo"/>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -45,7 +45,7 @@
         'container_id'    => 'bs4navbar',
         'container_class' => 'collapse navbar-collapse',
         'menu_id'         => false,
-        'menu_class'      => 'navbar-nav mr-auto',
+        'menu_class'      => 'navbar-nav mx-md-auto',
         'depth'           => 0,
         'fallback_cb'     => 'bs4navwalker::fallback',
         'walker'          => new bs4navwalker()

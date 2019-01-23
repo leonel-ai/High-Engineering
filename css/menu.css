@@ -1,24 +1,73 @@
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query since this is the default in Bootstrap */
 
+/* on hover if needed rgba(249, 159, 42, .75); */
+
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { }
 
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .navbar {
+    padding: 2em;
+  }
+  /* change navbar text color */
+  /* .navbar-light .navbar-text {
+      color: white;
+      font-weight: 700;
+  } */
+  /* change the link color */
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-weight: 700;
+  }
+  /* change the color of active or hovered links */
+  .navbar-light .nav-item.active .nav-link,
+  .navbar-light .nav-item:focus .nav-link,
+  .navbar-light .nav-item:hover .nav-link {
+    color: rgba(249, 159, 42);
+  }
+  /* change the color of visited links */
+  .navbar-light a:visited {
+    color: #0c204f;
+  }
+  .navbar-brand img {
+    width: 100%;
+    height: auto;
+  }
+  .dropdown {
+    margin-right: .75em;
+    color: white;
+  }
+  .dropdown button {
+    background-color: #243f7d;
+  }
   .dropdown:hover>.dropdown-menu {
     display: block;
+    background-color: #243f7d;
   }
+  .dropdown:hover>.dropdown-menu a:hover {
+    background-color:#0c204f;
+  }
+  .dropdown:hover>.dropdown-menu a {
+    color: white;
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
+
 }
 
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
+  .navbar {
+    padding: 3em;
+  }
 }
 
  /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  body {
-    padding-top: 4.5rem;
+  .navbar {
+    padding: 3em 0 3em 6em;
   }
 }

@@ -35,7 +35,7 @@
     width: 100%;
     height: auto;
   }
-  .dropdown {
+   .dropdown {
     margin-right: .75em;
     color: white;
   }
@@ -54,6 +54,15 @@
   }
   .dropdown-toggle::after {
     display: none;
+  }
+
+  /* Columns */
+  .dropdown-multicol {
+    width: 30em;
+  }
+  .dropdown-multicol > .dropdown-col {
+    display:inline-block;
+    width: 32%;
   }
 
 }

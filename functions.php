@@ -1,7 +1,7 @@
 <?php
 
       // Include custom navwalker
-    require_once('bs4navwalker.php');
+    // require_once('bs4navwalker.php');
 
     // include all styles
     function themebs_enqueue_styles() {

@@ -27,6 +27,12 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 
+    <div class="container-fluid" id="cta">
+      <div class="row">
+        <p class="display-5">Speak with a fall protection specialist: <span class="phone">1-888-347-4141</span></p>
+      </div>
+    </div>
+
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
       <div class="mx-auto d-md-flex d-block flex-md-nowrap">
         <a class="navbar-brand" href="/">
@@ -45,22 +51,25 @@
               </button>
               <div class="dropdown-menu dropdown-multicol" aria-labelledby="navbarDropdown">
                 <div class="dropdown-row">
-                  <a class="dropdown-item text-center" href="#">Products Overview</a>
+                  <a class="dropdown-item text-center" href="/products-overview/">Products Overview</a>
+                  <div class="dropdown-divider"></div>
                 </div>
-                <div class="dropdown-col">
-                  <a class="dropdown-item" href="#">Oranges</a>
-                  <a class="dropdown-item" href="#">Bananas</a>
-                  <a class="dropdown-item" href="#">Apples</a>
-                </div>
-                <div class="dropdown-col">
-                  <a class="dropdown-item" href="#">Potatoes</a>
-                  <a class="dropdown-item" href="#">Leeks</a>
-                  <a class="dropdown-item" href="#">Cauliflowers</a>
-                </div>
-                <div class="dropdown-col">
-                  <a class="dropdown-item" href="#">Beef</a>
-                  <a class="dropdown-item" href="#">Pork</a>
-                  <a class="dropdown-item" href="#">Venison</a>
+                <div class="row">
+                  <div class="dropdown-col col-md">
+                    <a class="dropdown-item" href="/guardrail-systems/">Guardrail Systems</a>
+                    <a class="dropdown-item" href="/self-closing-gates/">Self Closing Gates</a>
+                    <a class="dropdown-item" href="pallet-gates/">Pallet Gates</a>
+                    <a class="dropdown-item" href="/rigid-rail-systems/">Rigid Rail Systems</a>
+                    <a class="dropdown-item" href="/lifeline-systems/">Lifeline Systems</a>
+                    <a class="dropdown-item" href="/anchor-points/">Anchor Points</a>
+                  </div>
+                  <div class="dropdown-col col-md">
+                    <a class="dropdown-item" href="/portable-fall-protection/">Portable Fall Protection</a>
+                    <a class="dropdown-item" href="/crossovers-and-walkways/">Crossovers & Walkways</a>
+                    <a class="dropdown-item" href="/work-platforms/">Work Platforms</a>
+                    <a class="dropdown-item" href="/skylight-protection/">Skylight Protection</a>
+                    <a class="dropdown-item" href="/custom-solutions/">Custom Solutions</a>
+                  </div>
                 </div>
               </div>
             </li>
@@ -70,10 +79,11 @@
                 Services
               </button>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="/hazard-survey/">Hazard Survey</a>
+                <a class="dropdown-item" href="/design-engineering/">Design & Engineering</a>
+                <a class="dropdown-item" href="/product-supply-installation/">Product Supply & Installation</a>
+                <a class="dropdown-item" href="/inspection-testing-and-certification/">Inspection, Testing, & Certification</a>
+                <a class="dropdown-item" href="recertification/">Recertification</a>
               </div>
             </li>
 
@@ -83,22 +93,29 @@
               </button>
               <div class="dropdown-menu dropdown-menu-right dropdown-multicol" aria-labelledby="navbarDropdown">
                 <div class="dropdown-row">
-                  <a class="dropdown-item text-center" href="#">Applications Overview</a>
+                  <a class="dropdown-item text-center" href="/applications-overview/">Applications Overview</a>
+                  <div class="dropdown-divider"></div>
                 </div>
-                <div class="dropdown-col">
-                  <a class="dropdown-item" href="#">Oranges</a>
-                  <a class="dropdown-item" href="#">Bananas</a>
-                  <a class="dropdown-item" href="#">Apples</a>
-                </div>
-                <div class="dropdown-col">
-                  <a class="dropdown-item" href="#">Potatoes</a>
-                  <a class="dropdown-item" href="#">Leeks</a>
-                  <a class="dropdown-item" href="#">Cauliflowers</a>
-                </div>
-                <div class="dropdown-col">
-                  <a class="dropdown-item" href="#">Beef</a>
-                  <a class="dropdown-item" href="#">Pork</a>
-                  <a class="dropdown-item" href="#">Venison</a>
+                <div class="row">
+                  <div class="dropdown-col col-md">
+                    <a class="dropdown-item" href="/rooftop/">Rooftop</a>
+                    <a class="dropdown-item" href="/building-maintenance/">Building Maintenance</a>
+                    <a class="dropdown-item" href="/manufacturing-and-industrial/">Manufacturing & Industrial</a>
+                    <a class="dropdown-item" href="/oil-gas-chemical/">Oil & Gas/Chemical</a>
+                    <a class="dropdown-item" href="/construction/">Construction</a>
+                    <a class="dropdown-item" href="/commercial/">Commercial</a>
+                    <a class="dropdown-item" href="/retail/">Retail</a>
+                    <a class="dropdown-item" href="/railcar-trucking/">Railcar/Trucking</a>
+                  </div>
+                  <div class="dropdown-col col-md">
+                    <a class="dropdown-item" href="/aircraft/">Aircraft</a>
+                    <a class="dropdown-item" href="/stadiums-and-arenas/">Stadiums & Arenas</a>
+                    <a class="dropdown-item" href="/utilities/">Utilities</a>
+                    <a class="dropdown-item" href="/distribution/">Distribution</a>
+                    <a class="dropdown-item" href="/bridges/">Bridges</a>
+                    <a class="dropdown-item" href="/piperacks/">Piperacks</a>
+                    <a class="dropdown-item" href="/education-and-healthcare/">Education & Healthcare</a>
+                  </div>
                 </div>
               </div>
             </li>
@@ -108,10 +125,8 @@
                 Resources
               </button>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="/downloads/">Downloads</a>
+                <a class="dropdown-item" href="/fall-protection-knowledge-base/">Fall Protection Knowledge Base</a>
               </div>
             </li>
 
@@ -120,10 +135,9 @@
                 About
               </button>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="/contact/">Contact</a>
+                <a class="dropdown-item" href="/testimonials/">Testimonials</a>
+                <a class="dropdown-item" href="/case-studies/">Case Studies</a>
               </div>
             </li>
           </ul>

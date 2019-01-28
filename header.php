@@ -27,14 +27,13 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 
-    <div class="container-fluid" id="cta">
-      <div class="row">
-        <p class="display-5">Speak with a fall protection specialist: <span class="phone">1-888-347-4141</span></p>
-      </div>
-    </div>
-
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
-      <div class="mx-auto d-md-flex d-block flex-md-nowrap">
+      <div class="container-fluid" id="cta">
+        <div class="row" itemscope itemtype="http://schema.org/LocalBusiness">
+          <p class="display-5">Speak with a fall protection specialist: <span id="break"><br/></span><span class="phone" itemprop="telephone"><a href="tel:1-888-347-4141">1-888-347-4141</a></span></p>
+        </div>
+      </div>
+      <div class="mx-md-auto d-md-flex d-block flex-md-nowrap" id="fullnav">
         <a class="navbar-brand" href="/">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"
             width="170" height="80" class="d-inline-block align-top" alt="High Engineering logo"/>
@@ -49,13 +48,14 @@
               <button class="btn btn-primary btn-md dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Products
               </button>
-              <div class="dropdown-menu dropdown-multicol" aria-labelledby="navbarDropdown">
+              <span class="rectangle"></span>
+              <span class="triangle"></span>
+              <div class="dropdown-menu dropdown-twocol" aria-labelledby="navbarDropdown">
                 <div class="dropdown-row">
                   <a class="dropdown-item text-center" href="/products-overview/">Products Overview</a>
-                  <div class="dropdown-divider"></div>
                 </div>
-                <div class="row">
-                  <div class="dropdown-col col-md">
+                <div class="row" id="twocol-row">
+                  <div class="dropdown-col col-md-6">
                     <a class="dropdown-item" href="/guardrail-systems/">Guardrail Systems</a>
                     <a class="dropdown-item" href="/self-closing-gates/">Self Closing Gates</a>
                     <a class="dropdown-item" href="pallet-gates/">Pallet Gates</a>
@@ -63,7 +63,7 @@
                     <a class="dropdown-item" href="/lifeline-systems/">Lifeline Systems</a>
                     <a class="dropdown-item" href="/anchor-points/">Anchor Points</a>
                   </div>
-                  <div class="dropdown-col col-md">
+                  <div class="dropdown-col col-md-6">
                     <a class="dropdown-item" href="/portable-fall-protection/">Portable Fall Protection</a>
                     <a class="dropdown-item" href="/crossovers-and-walkways/">Crossovers & Walkways</a>
                     <a class="dropdown-item" href="/work-platforms/">Work Platforms</a>
@@ -78,7 +78,9 @@
               <button class="btn btn-primary btn-md dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Services
               </button>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <span class="rectangle"></span>
+              <span class="triangle"></span>
+              <div class="dropdown-menu single-col" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="/hazard-survey/">Hazard Survey</a>
                 <a class="dropdown-item" href="/design-engineering/">Design & Engineering</a>
                 <a class="dropdown-item" href="/product-supply-installation/">Product Supply & Installation</a>
@@ -91,25 +93,28 @@
               <button class="btn btn-primary btn-md dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Applications
               </button>
-              <div class="dropdown-menu dropdown-menu-right dropdown-multicol" aria-labelledby="navbarDropdown">
+              <span class="rectangle"></span>
+              <span class="triangle"></span>
+              <div class="dropdown-menu dropdown-multicol" aria-labelledby="navbarDropdown">
                 <div class="dropdown-row">
                   <a class="dropdown-item text-center" href="/applications-overview/">Applications Overview</a>
-                  <div class="dropdown-divider"></div>
                 </div>
-                <div class="row">
-                  <div class="dropdown-col col-md">
+                <div class="row" id="multicol-row">
+                  <div class="dropdown-col col-md-3">
                     <a class="dropdown-item" href="/rooftop/">Rooftop</a>
                     <a class="dropdown-item" href="/building-maintenance/">Building Maintenance</a>
                     <a class="dropdown-item" href="/manufacturing-and-industrial/">Manufacturing & Industrial</a>
                     <a class="dropdown-item" href="/oil-gas-chemical/">Oil & Gas/Chemical</a>
                     <a class="dropdown-item" href="/construction/">Construction</a>
+                  </div>
+                  <div class="dropdown-col col-md-3">
                     <a class="dropdown-item" href="/commercial/">Commercial</a>
                     <a class="dropdown-item" href="/retail/">Retail</a>
                     <a class="dropdown-item" href="/railcar-trucking/">Railcar/Trucking</a>
-                  </div>
-                  <div class="dropdown-col col-md">
                     <a class="dropdown-item" href="/aircraft/">Aircraft</a>
                     <a class="dropdown-item" href="/stadiums-and-arenas/">Stadiums & Arenas</a>
+                  </div>
+                  <div class="dropdown-col col-md-3">
                     <a class="dropdown-item" href="/utilities/">Utilities</a>
                     <a class="dropdown-item" href="/distribution/">Distribution</a>
                     <a class="dropdown-item" href="/bridges/">Bridges</a>
@@ -124,7 +129,9 @@
               <button class="btn btn-primary btn-md dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Resources
               </button>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <span class="rectangle"></span>
+              <span class="triangle"></span>
+              <div class="dropdown-menu single-col" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="/downloads/">Downloads</a>
                 <a class="dropdown-item" href="/fall-protection-knowledge-base/">Fall Protection Knowledge Base</a>
               </div>
@@ -134,7 +141,9 @@
               <button class="btn btn-primary btn-md dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About
               </button>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <span class="rectangle"></span>
+              <span class="triangle"></span>
+              <div class="dropdown-menu sm-col" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="/contact/">Contact</a>
                 <a class="dropdown-item" href="/testimonials/">Testimonials</a>
                 <a class="dropdown-item" href="/case-studies/">Case Studies</a>

@@ -25,3 +25,7 @@
 //       removeDropdownBtn();
 //   });
 // });
+
+jQuery(function($) {
+  $("body #gform_submit_button_1").val("Contact Us");
+});

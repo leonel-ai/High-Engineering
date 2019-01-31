@@ -1,15 +1,21 @@
 <?php
-/**
- * Template part for displaying page content in page.php
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package WordPress
- * @subpackage Twenty_Nineteen
- * @since 1.0.0
- */
-$bottomBannerImage = get_field('bottombannerimage');
-$callouts_background_image = get_field('callouts_background_image');
+/*
+* Template Name: Overview Page
+*/
+
+get_header();
+?>
+
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+			<?php
+
+			/* Start the Loop */
+			while ( have_posts() ) :
+				the_post();
+
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -48,10 +54,9 @@ $callouts_background_image = get_field('callouts_background_image');
 			)
 		);
 		?>
-  </div><!-- .entry-content -->
+	</div><!-- .entry-content -->
 
-
-	<!-- <?php if ( get_edit_post_link() ) : ?>
+	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
 			<?php
 			edit_post_link(
@@ -70,27 +75,18 @@ $callouts_background_image = get_field('callouts_background_image');
 				'<span class="edit-link">',
 				'</span>'
 			);
-			?> -->
+			?>
 		</footer><!-- .entry-footer -->
+
 
 	<?php endif; ?>
 </article><!-- #post-<?php the_ID(); ?> -->
-	<?php if($bottomBannerImage){ ?>
-	<div class="bottomBannerImageContainer" style="background-image: url('<?php echo $bottomBannerImage ?>'); background-size: cover; height: 288px;"></div>
+<?php
+			endwhile; // End of the loop.
+			?>
 
-<?php } ?>
-
-<div class="vc_row wpb_row vc_row-fluid homeSection testimonials"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid containerRow"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-	<div class="wpb_text_column wpb_content_element ">
-		<div class="wpb_wrapper">
-			<div class="bg-wordBubble"></div>
-<h2>WHAT OUR CLIENTS ARE SAYING</h2>
-<div class="lgx-carousel-section"><?php echo do_shortcode('[lgx-carousel]'); ?></div>
-<p><a class="orangeButton yellowButton" href="#">Read More</a></p>
-
-		</div>
-	</div>
-</div></div></div></div></div></div></div></div>
+		</main><!-- #main -->
+	</section><!-- #primary -->
 <div class="vc_row wpb_row vc_row-fluid homeSection contactForm"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid containerRow"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
 	<div class="wpb_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
@@ -101,3 +97,5 @@ $callouts_background_image = get_field('callouts_background_image');
 	</div>
 	<?php echo do_shortcode('[gravityform id=1 title=false description=false ajax=true]'); ?>
 </div></div></div></div></div></div></div></div>
+<?php
+get_footer();

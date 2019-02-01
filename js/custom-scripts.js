@@ -28,4 +28,33 @@
 
 jQuery(function($) {
   $("body #gform_submit_button_1").val("Contact Us");
+
+  $(".products").on('click', function() {
+    event.preventDefault();
+    window.location = '/products-overview/';
+  });
+
+  $(".services").on('click', function() {
+    event.preventDefault();
+    window.location = '/services-overview/';
+  });
+
+  $(".apps").on('click', function() {
+    event.preventDefault();
+    window.location = '/applications-overview/';
+  });
+
+  $(".resources").on('click', function() {
+    event.preventDefault();
+    window.location = '/resources-overview/';
+  });
+
+  $(".about").on('click', function() {
+    event.preventDefault();
+    window.location = '/about-overview/';
+  });
+
+
+
+
 });

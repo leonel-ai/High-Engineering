@@ -45,7 +45,7 @@
         <div class="collapse navbar-collapse" id="navbarMenu">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item dropdown">
-              <button class="btn btn-md dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class="btn btn-md dropdown-toggle products" type="button" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
                 Products
               </button>
               <span class="rectangle"></span>
@@ -75,7 +75,7 @@
             </li>
 
             <li class="nav-item dropdown">
-              <button class="btn btn-md dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class="btn btn-md dropdown-toggle services" type="button" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
                 Services
               </button>
               <span class="rectangle"></span>
@@ -93,7 +93,7 @@
             </li>
 
             <li class="nav-item dropdown">
-              <button class="btn btn-md dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class="btn btn-md dropdown-toggle apps" type="button" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
                 Applications
               </button>
               <span class="rectangle"></span>
@@ -129,7 +129,7 @@
             </li>
 
             <li class="nav-item dropdown">
-              <button class="btn btn-md dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class="btn btn-md dropdown-toggle resources" type="button" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
                 Resources
               </button>
               <span class="rectangle"></span>
@@ -144,7 +144,7 @@
             </li>
 
             <li class="nav-item dropdown">
-              <button class="btn btn-md dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class="btn btn-md dropdown-toggle about" type="button" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
                 About
               </button>
               <span class="rectangle"></span>

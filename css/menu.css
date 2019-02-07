@@ -17,7 +17,7 @@ body {
 #cta {
   position: relative;
   height: 3em;
-  background-color: #0c204f;
+  background-color: #243f7d;
 }
 #cta .row {
   margin-top: .5em;
@@ -25,7 +25,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: .85em;
-  background-color: #0c204f;
+  background-color: #243f7d;
   color: white;
 }
 #cta p {

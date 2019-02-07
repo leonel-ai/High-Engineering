@@ -17,9 +17,9 @@
 
 
       <!-- Footer -->
-      <footer id="colophon" class="site-footer page-footer font-small unique-color-dark" style="background-color: #0c204f;">
+      <footer id="colophon" class="site-footer page-footer font-small unique-color-dark" style="background-color: #243f7d;">
 
-          <div style="background-color: #0c204f;">
+          <div style="background-color: #243f7d;">
             <div class="container">
 
               <!-- Grid row-->

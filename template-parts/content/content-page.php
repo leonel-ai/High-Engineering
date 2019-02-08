@@ -23,7 +23,7 @@ $callouts_background_image = get_field('callouts_background_image');
 		$backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
 	$imgAlt = get_post_meta( $imgID, '_wp_attachment_image_alt', true );
 	?>
-	<div class="single-featured-image-header" style="background-image:  linear-gradient(to right, rgba(36,66,125,1) 0%,rgba(36,66,125,0.99) 1%,rgba(40,110,163,0.86) 15%,rgba(42,141,192,0.66) 37%,rgba(77,154,176,0.51) 54%,rgba(82,155,174,0.5) 55%,rgba(145,170,143,0.66) 69%,rgba(177,171,97,0.81) 83%,rgba(229,184,19,1) 100%), url(<?php echo $backgroundImg[0]; ?>);"><img src="/wp-content/uploads/2019/01/transparent.png" alt="<?php echo $imgAlt; ?>">
+	<div class="single-featured-image-header" style="background-image:  linear-gradient(to right, rgba(36,66,125,1) 0%,rgba(36,66,125,0.99) 1%,rgba(40,110,163,0.86) 15%,rgba(42,141,192,0.66) 37%,rgba(77,154,176,0.51) 54%,rgba(82,155,174,0.5) 55%,rgba(145,170,143,0.66) 69%,rgba(177,171,97,0.81) 83%,rgba(249,159,41,1) 100%), url(<?php echo $backgroundImg[0]; ?>);"><img src="/wp-content/uploads/2019/01/transparent.png" alt="<?php echo $imgAlt; ?>">
 	<div class="pageTitle">
 		<?php echo the_title();?>
 		</div>

@@ -28,8 +28,7 @@
                 <!-- Grid column -->
                 <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
                 <a class="footer-brand" href="/">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"
-                    width="170" height="80" class="d-inline-block align-top" alt="High Engineering logo"/>
+                  <img src="/wp-content/uploads/2019/02/logo-light-2.png" class="d-inline-block align-top" alt="High Engineering logo"/>
                 </a>
                 </div>
                 <!-- Grid column -->
@@ -40,10 +39,7 @@
 
                   <!--Linkedin -->
                   <a class="li-ic" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-linkedin-in white-text">
-                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/linkedin.png"
-                        width="40" height="40" class="d-inline-block align-bottom" alt="linkedin icon"/>
-                    </i>
+                      <img src="http://highedev.com/wp-content/uploads/2019/01/transparent.png" class="bg-linkedin" alt="linkedin icon"/>
                   </a>
 
                 </div>

@@ -9,6 +9,7 @@
  * @since 1.0.0
  */
 
+
 get_header();
 if(is_page(18)){
 echo do_shortcode('[rev_slider alias="home"]');
@@ -25,11 +26,6 @@ echo do_shortcode('[rev_slider alias="home"]');
 				the_post();
 
 				get_template_part( 'template-parts/content/content', 'page' );
-
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) {
-					comments_template();
-				}
 
 			endwhile; // End of the loop.
 			?>
